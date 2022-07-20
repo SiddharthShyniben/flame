@@ -8,7 +8,7 @@ console.log("%cHello, fellow coder / coding interested guy! Check out this cool 
 
 form.addEventListener('submit', e => {
 	  e.preventDefault();
-	  const res = doFlame(name.value, flame.value);
+	  const res = doFlame(name.value.toLowerCase(), flame.value.toLowerCase());
 	  result.innerHTML = res;
 });
 
