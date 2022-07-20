@@ -1,0 +1,65 @@
+*,
+::before,
+::after {
+	  box-sizing: border-box;
+}
+
+body {
+	  margin: 0;
+	  height: 100vh;
+	  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  background-color: #121212;
+	  color: #fefefe;
+}
+
+.main {
+	  width: 50%;
+	  height: 50%;
+}
+
+button, input, select, textarea {
+	  font-family: inherit;
+	  font-size: 100%;
+}
+
+input, button {
+	  background-color: #222;
+	  color: #fefefe;
+	  border: none;
+	  border-radius: 5px;
+	  padding: 1em;
+	  margin: .25em;
+
+	  transition: background-color 250ms, filter 150ms;
+}
+
+button {
+	  background-color: #c70039;
+}
+
+button:focus {
+	  background-color: #900c3f;
+}
+
+input:focus {
+	  background-color: #333;
+}
+
+input:hover, button:hover {
+	  filter: brightness(0.8);
+}
+
+::placeholder {
+	  filter: brightness(1.2);
+}
+
+h1 {
+	  font-family: 'Luckiest Guy', sans-serif;
+}
+
+#result {
+	  margin: .5em;
+}
